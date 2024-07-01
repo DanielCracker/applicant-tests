@@ -66,7 +66,7 @@ def main() -> None:
     print(order.total_price())
     payment = Payment()
     payment.create(order, 'bank', '0372846')
-    order = payment.pay()
+    payment.pay()
 
 
 if __name__ == "__main__":
